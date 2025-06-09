@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-name: "Inria Serif", serif;
+  --font-body: "M PLUS 1p", sans-serif;
+  --color-outline: #dde8ff;
+}
+
+@layer utilities {
+  .bg-cs-blue {
+    background: linear-gradient(180deg, #0000ff 0%, #9500ff4f 100%);
+  }
+
+  .force-none {
+    user-select: none;
+    touch-action: none;
+    pointer-events: none;
+  }
+
+  .cs-shadow {
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(
+        45deg,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000
+      );
+      background-size: 400%;
+      z-index: -1;
+      animation: shadow 20s linear infinite;
+    }
+
+    &:after {
+      top: -8px;
+      left: -8px;
+      width: calc(100% + 16px);
+      height: calc(100% + 16px);
+      filter: blur(24px);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes shadow {
+    0% {
+      background-position: 0 0;
+    }
+    50.01% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .shake:hover {
+    svg {
+      animation: shake 0.6s linear;
+    }
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    20%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    40%,
+    80% {
+      transform: rotate(4deg);
+    }
+  }
+}
