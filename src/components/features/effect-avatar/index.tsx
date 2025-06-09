@@ -18,7 +18,7 @@ export const EffectAvatar = () => {
         <div className="w-full h-full rounded-full" />
       </div>
       <Image
-        className="w-50 h-50 force-none object-cover rounded-full border-transparent border-4 relative"
+        className="w-50 h-50 force-none scale-110 object-cover rounded-full border-transparent border-4 relative"
         src={avatarImageRef}
         width={500}
         height={500}
