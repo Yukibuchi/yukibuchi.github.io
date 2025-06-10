@@ -18,7 +18,7 @@ export default async function Home() {
           Yukibuchi Reina
         </p>
         <p className="text-[20px] mt-2 ml-0.5">
-          Web Engineer / 🌱 App Enginner
+          Web Engineer / App Enginner 🌱
         </p>
         <div className="flex mt-8">
           <div className="flex flex-col space-y-2 items-center">
@@ -34,7 +34,7 @@ export default async function Home() {
               href="#"
               className="flex items-center hover:text-blue-700 duration-200 transition-colors"
             >
-              VTuber Ranking
+              xxxxxx xxxxxx
               <Icon.OpenInNew className="ml-0.5" />
             </a>
           </div>
@@ -46,9 +46,12 @@ export default async function Home() {
       </button>
 
       <div className="absolute -left-4 top-12 space-y-2">
-        <button className="bg-white block rounded-full cursor-pointer p-3.5 hover:bg-gray-50 shake group">
+        <a
+          href="https://github.com/Yukibuchi"
+          className="bg-white block rounded-full cursor-pointer p-3.5 hover:bg-gray-50 shake group"
+        >
           <Icon.Github className="transition-all duration-300 group-hover:scale-120" />
-        </button>
+        </a>
         <button className="bg-white block rounded-full cursor-pointer p-3.5 hover:bg-gray-50 shake animate-shake group">
           <Icon.Notion className="transition-all duration-300 group-hover:scale-120" />
         </button>
